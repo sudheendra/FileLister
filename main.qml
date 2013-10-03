@@ -7,11 +7,11 @@ ApplicationWindow {
     title: qsTr("FileLister")
 
     statusBar: StatusBar {
-    RowLayout {
-        Label {
-            id: status
+        RowLayout {
+            Label {
+                id: status
+            }
         }
-    }
     }
 
     width: 400
@@ -47,6 +47,7 @@ ApplicationWindow {
         selectedNameFilter: "All files (*)"
         onAccepted: {
             filename.text = folder.toString().replace("file:///", "")
+
         }
     }
 }

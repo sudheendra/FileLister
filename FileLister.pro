@@ -12,7 +12,11 @@ TARGET = FileLister
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
+SOURCES += main.cpp \
+    folderhandle.cpp
 
 OTHER_FILES += \
     main.qml
+
+HEADERS += \
+    folderhandle.h
